@@ -1,0 +1,46 @@
+<table class="tx-srevents" >
+	<tr>
+		<td>
+			<f:translate key="tx_srevents_domain_model_event.date" />
+		</td>
+		<td>
+			<f:format.date format="{settings.dateFormat}">{event.date}</f:format.date>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_srevents_domain_model_event.eventname" />
+		</td>
+		<td>
+			{event.eventname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_srevents_domain_model_event.location" />
+		</td>
+		<td>
+			<f:format.nl2br>{event.location}</f:format.nl2br>
+		</td>
+	</tr>
+	<f:if condition="{event.information}">
+		<tr>
+			<td>
+				<f:translate key="tx_srevents_domain_model_event.information" />
+			</td>
+			<td>
+				<f:format.nl2br>{event.information}</f:format.nl2br>
+			</td>
+		</tr>
+	</f:if>
+	<f:if condition="{event.link}">
+		<tr>
+			<td>
+				<f:translate key="tx_srevents_domain_model_event.link" />
+			</td>
+			<td>
+				<f:link.external uri="{event.link}">{event.link}</f:link.external>
+			</td>
+		</tr>
+	</f:if>
+</table>

@@ -1,0 +1,17 @@
+plugin.tx_srevents {
+	view {
+		# cat=plugin.tx_srevents/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:srevents/Resources/Private/Templates/
+		# cat=plugin.tx_srevents/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:srevents/Resources/Private/Partials/
+		# cat=plugin.tx_srevents/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:srevents/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_srevents//a; type=string; label=Default storage PID
+		storagePid = 106
+	}
+	settings {
+		dateFormat = d.m.Y
+	}
+}

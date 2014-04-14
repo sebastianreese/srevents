@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-11T15:16:40Z" product-name="srevents">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_srevents_domain_model_event">
+				<source>Event</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.date">
+				<source>date</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.eventname">
+				<source>eventname</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.location">
+				<source>location</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.information">
+				<source>information</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.link">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.more">
+				<source>more</source>
+			</trans-unit>
+			<trans-unit id="tx_srevents_domain_model_event.backtolist">
+				<source>back to list</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,42 @@
+plugin.tx_srevents {
+	view {
+		templateRootPath = {$plugin.tx_srevents.view.templateRootPath}
+		partialRootPath = {$plugin.tx_srevents.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_srevents.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_srevents.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		dateFormat = {$plugin.tx_srevents.settings.dateFormat}
+	}
+}
+
+plugin.tx_srevents._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-srevents table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-srevents table th {
+		font-weight:bold;
+	}
+
+	.tx-srevents table td {
+		vertical-align:top;
+	}
+)
