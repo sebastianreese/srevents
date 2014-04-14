@@ -1,3 +1,4 @@
+{namespace sr=TYPO3\Srevents\ViewHelpers}
 <table class="tx_srevents contenttable" >
 	<tr>
 		<td>
@@ -12,7 +13,7 @@
 			<f:translate key="tx_srevents_domain_model_event.date" />
 		</td>
 		<td>
-			<f:format.date format="{settings.dateFormat}">{event.date}</f:format.date>
+			<sr:format.dateTime format="{settings.dateFormat}" timestamp="{event.date}"></sr:format.dateTime>
 		</td>
 	</tr>
 	<tr>
