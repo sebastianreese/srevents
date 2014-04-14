@@ -119,7 +119,7 @@ $TCA['tx_srevents_domain_model_event'] = array(
 			'config' => array(
 				'type' => 'text',
 				'cols' => 40,
-				'rows' => 3,
+				'rows' => 2,
 				'eval' => 'trim,required'
 			),
 		),
