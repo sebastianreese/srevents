@@ -5,20 +5,19 @@
 
 	<f:flashMessages />
 
-<table  class="tx_srevents" >
-	<tr>
-		<th><f:translate key="tx_srevents_domain_model_event.date" /></th>
-		<th><f:translate key="tx_srevents_domain_model_event.eventname" /></th>
-		<th><f:translate key="tx_srevents_domain_model_event.location" /></th>
-		<th> </th>
+<table  class="tx_srevents contenttable" >
+	<tr height="30">
+		<th width="500" scope="col"><f:translate key="tx_srevents_domain_model_event.eventname" /></th>
+		<th width="500" scope="col"><f:translate key="tx_srevents_domain_model_event.location" /></th>
+		<th width="500" scope="col"><f:translate key="tx_srevents_domain_model_event.date" /></th>
 		<th> </th>
 	</tr>
 
 	<f:for each="{events}" as="event">
 		<tr>
-			<td><f:format.date format="{settings.dateFormat}">{event.date}</f:format.date></td>
 			<td>{event.eventname}</td>
 			<td><f:format.nl2br>{event.location}</f:format.nl2br></td>
+			<td><f:format.date format="{settings.dateFormat}">{event.date}</f:format.date></td>
 			<td><f:link.action action="show" arguments="{event : event}"> <f:translate key="tx_srevents_domain_model_event.more" /></f:link.action></td>
 		</tr>
 	</f:for>

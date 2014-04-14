@@ -1,18 +1,18 @@
-<table class="tx-srevents" >
-	<tr>
-		<td>
-			<f:translate key="tx_srevents_domain_model_event.date" />
-		</td>
-		<td>
-			<f:format.date format="{settings.dateFormat}">{event.date}</f:format.date>
-		</td>
-	</tr>
+<table class="tx_srevents contenttable" >
 	<tr>
 		<td>
 			<f:translate key="tx_srevents_domain_model_event.eventname" />
 		</td>
 		<td>
 			{event.eventname}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_srevents_domain_model_event.date" />
+		</td>
+		<td>
+			<f:format.date format="{settings.dateFormat}">{event.date}</f:format.date>
 		</td>
 	</tr>
 	<tr>
